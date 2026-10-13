@@ -1,0 +1,17 @@
+AgendaWeb · guía rápida
+======================
+
+Requisitos: PHP con mysqli y mysqlnd, además de MySQL.
+
+Configuración:
+  1. Ejecuta db.sql en MySQL Workbench. Crea la base agenda2 y la tabla eventos.
+  2. Copia conexion.ejemplo.php como conexion.php.
+  3. Configura tus credenciales locales de MySQL dentro de conexion.php.
+  4. En esta carpeta ejecuta: php -S localhost:8000
+  5. Abre http://localhost:8000 en el navegador.
+
+La aplicación permite registrar, consultar, editar y borrar eventos. El
+calendario y la lista muestran los eventos guardados por fecha, hora y categoría.
+
+conexion.php contiene credenciales locales y está excluido de GitHub por
+.gitignore. No publiques ese archivo ni compartas sus credenciales.
